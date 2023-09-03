@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 2fr 1fr / 1fr;
+}
+
+.page {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.container {
+    width: 600px;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    align-items: flex-start;
+}
+.card {
+    border: 1px solid red;
+    width: 200px;
+    height: 250px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+    justify-items: center;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.author {
+    font-size: 16px;
+}
+.pages {
+    font-size: 12px;
+}
+.read {
+    font-size: 14px;
+}
+.bottom {
+    background-color: aquamarine;
+    display: grid;
+    justify-items: center;
+}
+.form-container {
+    display: none;
+}
+.form {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    justify-items: center;
+    border: 2px solid blue;
+    width: 300px;
+    gap: 10px;
+}
+.form>div {
+    display: grid;
+    grid-template: 1fr / 100px 1fr;
+    border: 2px solid blueviolet;
+}
+input[type="text"],
+input[type="number"] {
+    appearance: none;
+    width: 150px;
+}
+input[type="checkbox"] {
+    width: 150px;
+}
